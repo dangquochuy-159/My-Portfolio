@@ -2,12 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --color-text: #8a99ad;
+    --color-primary: #5febd5;
+    --color-box: rgba(30, 41, 59, 0.5);
+    --color-background: #0f172a;
+}
+
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: #0f172a;
+    background-color: var(--color-background);
 }
 
 .nav--item:hover a {
