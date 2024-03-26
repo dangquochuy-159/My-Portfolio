@@ -7,7 +7,9 @@ function Footer() {
             <ul className="flex gap-7 justify-center">
                 {data_intro.socials.map((social) => (
                     <li key={social.name} className=" rounded-full">
-                        <a href={social.href}>{social.icon}</a>
+                        <a href={social.href} target="_blank">
+                            {social.icon}
+                        </a>
                     </li>
                 ))}
             </ul>
