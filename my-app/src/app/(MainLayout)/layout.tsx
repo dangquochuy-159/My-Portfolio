@@ -6,7 +6,7 @@ function MainLayout({ children }: { children: React.ReactNode }) {
     return (
         <MouseTracker>
             <Header />
-            {children}
+            <main className="container mx-auto py-[150px] h-full">{children}</main>
             <Footer />
         </MouseTracker>
     );
