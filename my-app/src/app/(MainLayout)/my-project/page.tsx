@@ -1,10 +1,15 @@
 import { IconGitLink, IconWebsite } from '@/components/Icon/Icon';
+import TitlePage from '@/components/TitlePage/TitlePage';
 import { DataProject } from '@/data/data_portfolio';
 
 function Project() {
     const data_project = DataProject;
     return (
         <section className="h-auto text-[var(--color-text)] relative flex flex-col gap-y-8 pb-10">
+            <TitlePage
+                title="Welcome to my project"
+                des="Thank you for your interest in my projects. Please join me to explore them."
+            />
             {data_project?.map((project_item) => (
                 <div key={project_item.time} className=" grid grid-cols-4 bg-[var(--color-box)] p-10 rounded-xl">
                     <div className="col-span-3 flex flex-col gap-2">
