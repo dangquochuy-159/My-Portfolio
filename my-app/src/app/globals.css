@@ -21,3 +21,7 @@ body {
 .nav--item:hover a {
     box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8);
 }
+
+.social--item:hover a {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8);
+}
