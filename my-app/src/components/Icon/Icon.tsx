@@ -10,8 +10,15 @@ export const Icon_LinkedIn = () => (
     </svg>
 );
 
-export const Icon_Facebook = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" x="0px" y="0px" className="h-6 w-6" viewBox="0 0 50 50">
+export const Icon_Facebook = ({ color, className }: { color?: string; className?: string }) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill={color ? color : '#ffffff'}
+        x="0px"
+        y="0px"
+        className={className ?? 'h-6 w-6'}
+        viewBox="0 0 50 50"
+    >
         <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path>
     </svg>
 );
@@ -32,18 +39,18 @@ export const Icon_Date = () => (
         <path d="M96 32V64H48C21.5 64 0 85.5 0 112v48H448V112c0-26.5-21.5-48-48-48H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H160V32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192H0V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V192z" />
     </svg>
 );
-export const Icon_Location = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" className="h-4 w-4" fill="#5febd5">
+export const Icon_Location = ({ className }: { className?: string }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" className={className ?? 'h-4 w-4'} fill="#5febd5">
         <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
     </svg>
 );
-export const Icon_Phone = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="h-4 w-4" fill="#5febd5">
+export const Icon_Phone = ({ className }: { className?: string }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className={className ?? 'h-4 w-4'} fill="#5febd5">
         <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
     </svg>
 );
-export const Icon_Mail = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="h-4 w-4" fill="#5febd5">
+export const Icon_Mail = ({ className }: { className?: string }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className={className ?? 'h-4 w-4'} fill="#5febd5">
         <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
     </svg>
 );
