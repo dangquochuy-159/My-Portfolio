@@ -1,30 +1,29 @@
-```bash
-# <span style="color:blue">Portfolio</span>
+<span style="color:blue">Portfolio</span>
 
-# <span style="color:blue">Introduce</span>
+<span style="color:blue">Introduce</span>
 
 This is a project portfolio built using Next.js, a React framework for building efficient web applications with JavaScript or TypeScript. This portfolio is designed to introduce yourself, your skills, and my important projects.
 
-# <span style="color:blue">Installation Instructions</span>
+<span style="color:blue">Installation Instructions</span>
 
 Follow these steps to set up and run the project:
 
-## <span style="color:purple">1. Clone Repository</span>
+<span style="color:purple">1. Clone Repository</span>
 
 git clone <repository_url>
 
-## <span style="color:purple">2.Navigate to Project Directory</span>
+<span style="color:purple">2.Navigate to Project Directory</span>
 **cd my-app**
 
-## <span style="color:purple">3.Install Dependencies</span>
+<span style="color:purple">3.Install Dependencies</span>
 **npm install**
 
-## <span style="color:purple">4.Start Development Server</span>
+<span style="color:purple">4.Start Development Server</span>
 **npm run dev**
 
-## <span style="color:purple">5.Open your web browser and visit the following address</span>
+<span style="color:purple">5.Open your web browser and visit the following address</span>
 **localhost:3000**
-```
+
 
 # Technology used
 [![NextJS](https://img.shields.io/badge/NextJS-%23000000.svg?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
