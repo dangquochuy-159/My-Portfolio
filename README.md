@@ -1,24 +1,28 @@
-# Portfolio
-# Introduce
+# <span style="color:blue">Portfolio</span>
+
+# <span style="color:blue">Introduce</span>
+
 This is a project portfolio built using Next.js, a React framework for building efficient web applications with JavaScript or TypeScript. This portfolio is designed to introduce yourself, your skills, and my important projects.
 
-# Installation Instructions
+# <span style="color:blue">Installation Instructions</span>
 
 Follow these steps to set up and run the project:
-## 1.Clone Repository
+
+## <span style="color:purple">1. Clone Repository</span>
+
 git clone <repository_url>
 
-## 2.Navigate to Project Directory
-cd my-app
+## <span style="color:purple">2.Navigate to Project Directory</span>
+**cd my-app**
 
-## 3.Install Dependencies
-npm install
+## <span style="color:purple">3.Install Dependencies</span>
+**npm install**
 
-## 4.Start Development Server
-npm run dev
+## <span style="color:purple">4.Start Development Server</span>
+**npm run dev**
 
-## 5.Open your web browser and visit the following address
-localhost:3000
+## <span style="color:purple">5.Open your web browser and visit the following address</span>
+**localhost:3000**
 
 # Technology used
 [![NextJS](https://img.shields.io/badge/NextJS-%23000000.svg?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
@@ -28,10 +32,10 @@ localhost:3000
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-%231a202c.svg?style=for-the-badge&logo=tailwind-css&logoColor=64ffda)](https://tailwindcss.com/)
 
 # Author (Đặng Quốc Huy)
-[GitHub](https://github.com/dangquochuy-159)
-[FaceBook](https://www.facebook.com/quochuy2212)
-[Linkedin](https://www.linkedin.com/in/quochuy2212/)
-[Instagram](https://www.instagram.com/dqh.2212/)
+[![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dangquochuy-159)
+[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/quochuy2212)
+[![Linkedin](https://img.shields.io/badge/Linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/quochuy2212/)
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/dqh.2212/)
 
 # Website
 [HuyDev Portfolio](https://huydev-portfolio.vercel.app/) 
