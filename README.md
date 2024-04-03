@@ -5,27 +5,27 @@ This is a project portfolio built using Next.js, a React framework for building 
 # Installation Instructions
 
 Follow these steps to set up and run the project:
-## Clone Repository
+## 1.Clone Repository
 git clone <repository_url>
 
-## Navigate to Project Directory
+## 2.Navigate to Project Directory
 cd my-app
 
-## Install Dependencies
+## 3.Install Dependencies
 npm install
 
-## Start Development Server
+## 4.Start Development Server
 npm run dev
 
-## Open your web browser and visit the following address
+## 5.Open your web browser and visit the following address
 localhost:3000
 
 # Technology used
-[NextJS](https://nextjs.org/)
-[ReactJS](https://react.dev/)
-[HTML](https://www.w3schools.com/html/)
-[CSS](https://www.w3schools.com/css/)
-[Tailwind CSS](https://tailwindcss.com/)
+[![NextJS](https://img.shields.io/badge/NextJS-%23000000.svg?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![ReactJS](https://img.shields.io/badge/ReactJS-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
+[![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://www.w3schools.com/html/)
+[![CSS](https://img.shields.io/badge/CSS-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3schools.com/css/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-%231a202c.svg?style=for-the-badge&logo=tailwind-css&logoColor=64ffda)](https://tailwindcss.com/)
 
 # Author (Đặng Quốc Huy)
 [GitHub](https://github.com/dangquochuy-159)
