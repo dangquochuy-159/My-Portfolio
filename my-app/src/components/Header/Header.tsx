@@ -3,18 +3,23 @@ import { DataHeader, DataIntroduce } from '@/data/data_portfolio';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { Icon_Contact, Icon_Home, Icon_Info, Icon_Project } from '../Icon/Icon';
+import path from 'path';
 
 function Header() {
     const data_header = DataHeader;
     const data_intro = DataIntroduce;
     const pathName = usePathname();
     return (
-        <header className="h-[100px] w-full bg-[var(--color-background)] text-white fixed top-0 left-0 z-50">
-            <div className="container h-full m-auto flex justify-between">
+        <header className="hidden md:block h-[var(--height-header)] w-full bg-[var(--color-background)] text-white fixed top-0 left-0 z-50">
+            <div className="container h-full m-auto flex flex-col md:flex-row justify-between">
                 <div className="">
                     <ul className="h-full flex justify-end items-center gap-10">
                         {data_intro.socials.map((social) => (
-                            <li key={social.name} className="opacity-70 rounded-full hover:opacity-100 hover:scale-125">
+                            <li
+                                key={social.name}
+                                className="opacity-100 md:opacity-70 rounded-full hover:opacity-100 hover:scale-125"
+                            >
                                 <a href={social.href} target="_blank">
                                     {social.icon}
                                 </a>
