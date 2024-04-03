@@ -14,12 +14,12 @@ export default function Home() {
     };
 
     return (
-        <div className="grid grid-cols-2 px-[200px]">
+        <div className="w-full xl:grid xl:grid-cols-2 xl:px-[200px] text-center xl:text-left">
             <div className="col-span-1 text-white h-full flex flex-col gap-y-5">
-                <h1 className="text-5xl font-extrabold">{data_intro.name}</h1>
+                <h1 className="text-4xl md:text-5xl font-extrabold">{data_intro.name}</h1>
                 <p className="text-sm font-bold">{data_intro.field_work}</p>
-                <p className="w-3/4 text-sm text-[var(--color-text)] leading-7">{data_intro.intro}</p>
-                <ImageTag src={data_header.logo} alt="logo" className="w-1/2 h-1/2 p-4" />
+                <p className="xl:w-3/4 text-sm text-[var(--color-text)] leading-7">{data_intro.intro}</p>
+                <ImageTag src={data_header.logo} alt="logo" className="hidden xl:block  w-1/2 h-1/2 p-4" />
                 <a
                     href="/cv"
                     target="_blank"
@@ -27,12 +27,12 @@ export default function Home() {
                                 text-center text-xs text-white font-extrabold 
                                 border-2 border-[#01eefe] border-solid rounded-full
                                 bg-[#01eefe] hover:text-black
-                                shadow-2xl"
+                                shadow-2xl mx-auto mt-10 xl:m-0"
                 >
                     Dowload CV
                 </a>
             </div>
-            <div className="col-span-1">
+            <div className="col-span-1 mt-10 xl:mt-0">
                 <p className="text-[var(--color-text)] leading-9">
                     Back in 2022, I decided to try my hand at simple website interfaces with basic technologies like
                     {convert_link('HTML', 'https://vi.wikipedia.org/wiki/HTML')},

@@ -11,8 +11,11 @@ function Project() {
                 des="Thank you for your interest in my projects. Please join me to explore them."
             />
             {data_project?.map((project_item) => (
-                <div key={project_item.time} className=" grid grid-cols-4 bg-[var(--color-box)] p-10 rounded-xl">
-                    <div className="col-span-3 flex flex-col gap-2">
+                <div
+                    key={project_item.time}
+                    className=" grid grid-cols-4 gap-y-4 bg-[var(--color-box)] p-10 md:rounded-xl"
+                >
+                    <div className="col-span-4 xl:col-span-3 flex flex-col gap-2">
                         <p className="text-[var(--color-text)]"> {project_item.time}</p>
 
                         <p className="text-[var(--color-primary)] text-2xl font-extrabold ">{project_item.name}</p>
@@ -21,7 +24,7 @@ function Project() {
                             <h3 className="text-white  font-bold">Team size:</h3>
                             <p className="italic">{project_item.size}</p>
                         </div>
-                        <div className="flex gap-2">
+                        <div className="flex flex-col md:flex-row gap-2">
                             <h3 className="text-white  font-bold">My position:</h3>
                             <p className="italic">{project_item.position}</p>
                         </div>
@@ -47,7 +50,7 @@ function Project() {
                         </div>
                     </div>
 
-                    <div className="col-span-1">
+                    <div className="col-span-4 xl:col-span-1">
                         <h3 className="text-white mb-2 font-bold">Technology description:</h3>
 
                         <div className="flex flex-wrap gap-x-2 gap-y-4">
