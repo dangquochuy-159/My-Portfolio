@@ -1,27 +1,27 @@
-<span style="color:blue">Portfolio</span>
+# Portfolio
 
-<span style="color:blue">Introduce</span>
+# Introduce
 
 This is a project portfolio built using Next.js, a React framework for building efficient web applications with JavaScript or TypeScript. This portfolio is designed to introduce yourself, your skills, and my important projects.
 
-<span style="color:blue">Installation Instructions</span>
+# Installation Instructions
 
 Follow these steps to set up and run the project:
 
-<span style="color:purple">1. Clone Repository</span>
+## 1. Clone Repository
 
-git clone <repository_url>
+git clone <https://github.com/dangquochuy-159/My-Portfolio.git>
 
-<span style="color:purple">2.Navigate to Project Directory</span>
+## 2.Navigate to Project Directory
 **cd my-app**
 
-<span style="color:purple">3.Install Dependencies</span>
+## 3.Install Dependencies
 **npm install**
 
-<span style="color:purple">4.Start Development Server</span>
+## 4.Start Development Server
 **npm run dev**
 
-<span style="color:purple">5.Open your web browser and visit the following address</span>
+## 5.Open your web browser and visit the following address
 **localhost:3000**
 
 
