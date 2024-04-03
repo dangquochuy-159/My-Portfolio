@@ -10,7 +10,7 @@ Follow these steps to set up and run the project:
 
 ## 1. Clone Repository
 
-git clone <https://github.com/dangquochuy-159/My-Portfolio.git>
+**git clone <https://github.com/dangquochuy-159/My-Portfolio.git>**
 
 ## 2.Navigate to Project Directory
 **cd my-app**
