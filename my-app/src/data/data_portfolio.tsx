@@ -17,6 +17,8 @@ import {
 interface IRedirect {
     name?: string;
     href: string;
+    icon?: React.ReactNode;
+    icon_name?: string;
 }
 
 interface IDataHeader {
@@ -24,23 +26,17 @@ interface IDataHeader {
     nav: IRedirect[];
 }
 
-interface ISocial extends IRedirect {
-    icon: React.ReactNode;
-}
-
 interface IIntroduce {
     name: string;
     field_work: string;
     intro: string;
-    socials: ISocial[];
+    socials: IRedirect[];
 }
 
 interface IPersonalItem {
     field_text: string;
     icon: React.ReactNode;
 }
-
-interface IPersonal {}
 
 interface IProject {
     time: string;
@@ -57,10 +53,10 @@ interface IProject {
 export const DataHeader: IDataHeader = {
     logo: '/image/logo_header.png',
     nav: [
-        { name: 'Home', href: '/' },
-        { name: 'About me', href: '/about-me' },
-        { name: 'Project', href: '/my-project' },
-        { name: 'Contact', href: '/contact' },
+        { name: 'Home', href: '/', icon_name: 'home' },
+        { name: 'About me', href: '/about-me', icon_name: 'about' },
+        { name: 'Project', href: '/my-project', icon_name: 'project' },
+        { name: 'Contact', href: '/contact', icon_name: 'contact' },
     ],
 };
 
