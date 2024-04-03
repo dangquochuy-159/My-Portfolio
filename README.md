@@ -12,16 +12,16 @@ Follow these steps to set up and run the project:
 
 **git clone <https://github.com/dangquochuy-159/My-Portfolio.git>**
 
-## 2.Navigate to Project Directory
+## 2. Navigate to Project Directory
 **cd my-app**
 
-## 3.Install Dependencies
+## 3. Install Dependencies
 **npm install**
 
-## 4.Start Development Server
+## 4. Start Development Server
 **npm run dev**
 
-## 5.Open your web browser and visit the following address
+## 5. Open your web browser and visit the following address
 **localhost:3000**
 
 
