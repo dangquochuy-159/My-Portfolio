@@ -7,6 +7,9 @@
     --color-primary: #5febd5;
     --color-box: rgba(30, 41, 59, 0.5);
     --color-background: #0f172a;
+
+    --height-header: 100px;
+    --height-header-mobile: 60px;
 }
 
 
