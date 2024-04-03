@@ -39,6 +39,7 @@ Follow these steps to set up and run the project:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/dqh.2212/)
 
 # Website
-[HuyDev Portfolio](https://huydev-portfolio.vercel.app/) 
+[![HuyDev Portfolio](https://img.shields.io/badge/HuyDev%20Portfolio-%2312100E.svg?style=for-the-badge&logo=vercel&logoColor=white)](https://huydev-portfolio.vercel.app/)
+
 
 
