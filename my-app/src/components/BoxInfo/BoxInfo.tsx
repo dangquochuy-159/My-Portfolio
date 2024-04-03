@@ -9,12 +9,12 @@ interface IProps {
 
 const BoxInfo: React.FC<IProps> = ({ title_box, data }) => {
     return (
-        <div className="col-span-1 p-4 rounded-xl bg-[var(--color-box)]">
+        <div className="w-full md:w-2/3 xl:w-full col-span-1 p-4 md:rounded-xl bg-[var(--color-box)] m-auto xl:m-0 ">
             <h2 className="font-bold text-white text-center">{title_box}</h2>
             <ul className="flex flex-col gap-5 text-[var(--color-text)] mt-3">
                 {data.map((item) => (
                     <li key={item.field_text} className="flex gap-5 items-center">
-                        {item.icon}
+                        <span>{item.icon} </span>
                         <span>{item.field_text}</span>
                     </li>
                 ))}
