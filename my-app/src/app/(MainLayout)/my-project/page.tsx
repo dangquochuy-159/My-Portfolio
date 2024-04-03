@@ -5,7 +5,7 @@ import { DataProject } from '@/data/data_portfolio';
 function Project() {
     const data_project = DataProject;
     return (
-        <section className="h-auto text-[var(--color-text)] relative flex flex-col gap-y-8 pb-10">
+        <section className="h-auto text-[var(--color-text)] relative flex flex-col gap-y-8 py-[var(--height-header)] md:pt-0 md:pb-10">
             <TitlePage
                 title="Welcome to my project"
                 des="Thank you for your interest in my projects. Please join me to explore them."
@@ -13,7 +13,7 @@ function Project() {
             {data_project?.map((project_item) => (
                 <div
                     key={project_item.time}
-                    className=" grid grid-cols-4 gap-y-4 bg-[var(--color-box)] p-10 md:rounded-xl"
+                    className=" grid grid-cols-4 gap-y-4 bg-[var(--color-box)] p-5 md:p-10 md:rounded-xl"
                 >
                     <div className="col-span-4 xl:col-span-3 flex flex-col gap-2">
                         <p className="text-[var(--color-text)]"> {project_item.time}</p>
@@ -30,9 +30,9 @@ function Project() {
                         </div>
                         <div>
                             <h3 className="text-white  font-bold">My responsibility: </h3>
-                            <ul className="flex flex-col mt-2 gap-2 px-12 italic">
+                            <ul className="flex flex-col mt-2 gap-2 md:px-12 italic">
                                 {project_item.roles.map((role) => (
-                                    <li key={role} className="list-disc">
+                                    <li key={role} className="md:list-disc">
                                         {role}
                                     </li>
                                 ))}
@@ -40,9 +40,9 @@ function Project() {
                         </div>
                         <div>
                             <h3 className="text-white  font-bold">Description:</h3>
-                            <ul className="flex flex-col mt-2 gap-2 px-12 italic">
+                            <ul className="flex flex-col mt-2 gap-2 md:px-12 italic">
                                 {project_item.des?.map((desItem) => (
-                                    <li key={desItem} className="list-disc">
+                                    <li key={desItem} className="md:list-disc">
                                         {desItem}
                                     </li>
                                 ))}

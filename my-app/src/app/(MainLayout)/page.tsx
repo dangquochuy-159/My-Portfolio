@@ -14,7 +14,7 @@ export default function Home() {
     };
 
     return (
-        <div className="w-full xl:grid xl:grid-cols-2 xl:px-[200px] text-center xl:text-left">
+        <div className="h-auto w-full xl:grid xl:grid-cols-2 xl:px-[200px] py-[var(--height-header)] md:py-0 text-center xl:text-left">
             <div className="col-span-1 text-white h-full flex flex-col gap-y-5">
                 <h1 className="text-4xl md:text-5xl font-extrabold">{data_intro.name}</h1>
                 <p className="text-sm font-bold">{data_intro.field_work}</p>

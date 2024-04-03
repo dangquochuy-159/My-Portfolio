@@ -3,7 +3,7 @@ import TitlePage from '@/components/TitlePage/TitlePage';
 
 function Contact() {
     return (
-        <>
+        <div className="py-[var(--height-header)] md:py-0">
             <TitlePage
                 title="Contact me to work together"
                 des="Thank you for visiting my portfolio page. If you are impressed, you can contact me via the methods below."
@@ -34,7 +34,7 @@ function Contact() {
                     </a>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
