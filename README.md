@@ -1,3 +1,4 @@
+```bash
 # <span style="color:blue">Portfolio</span>
 
 # <span style="color:blue">Introduce</span>
@@ -23,6 +24,7 @@ git clone <repository_url>
 
 ## <span style="color:purple">5.Open your web browser and visit the following address</span>
 **localhost:3000**
+```
 
 # Technology used
 [![NextJS](https://img.shields.io/badge/NextJS-%23000000.svg?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
