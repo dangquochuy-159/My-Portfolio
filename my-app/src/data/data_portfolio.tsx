@@ -40,7 +40,7 @@ interface IPersonalItem {
 }
 
 interface IProject {
-    image: string;
+    img: string;
     time: string;
     name: string;
     size: string;
@@ -118,7 +118,7 @@ export const Data_Skills: IPersonalItem[] = [
 
 export const DataProject: IProject[] = [
     {
-        image: '/image/project_familypet.png',
+        img: '/image/project_familypet.png',
         time: '10/2023 - 12/2023',
         name: 'E-commerce website (FamilyPet)',
         size: '2',
@@ -183,7 +183,7 @@ export const DataProject: IProject[] = [
         },
     },
     {
-        image: '/image/project_shoppet.png',
+        img: '/image/project_shoppet.png',
         time: '04/2023 - 05/2023',
         name: 'E-commerce website (Shoppet)',
         size: '2',
@@ -236,7 +236,7 @@ export const DataProject: IProject[] = [
         ],
     },
     {
-        image: '/image/minas_dental.png',
+        img: '/image/minas_dental.png',
         time: '2023',
         name: 'MINAS DENTAL',
         size: '2',
@@ -271,7 +271,7 @@ export const DataProject: IProject[] = [
         },
     },
     {
-        image: '/image/matgia.png',
+        img: '/image/matgia.png',
         time: '2023',
         name: 'Trung tâm Mắt Giả',
         size: '2',
@@ -304,7 +304,7 @@ export const DataProject: IProject[] = [
         },
     },
     {
-        image: '/image/eshop.png',
+        img: '/image/eshop.png',
         time: '2023',
         name: 'Eshop - Alo Gia Dụng',
         size: '2',
@@ -337,7 +337,7 @@ export const DataProject: IProject[] = [
         },
     },
     {
-        image: '/image/tinhban_coffe.png',
+        img: '/image/tinhban_coffe.png',
         time: '11/2023 - 12/2023',
         name: 'Tình Bạn Coffe',
         size: '2',

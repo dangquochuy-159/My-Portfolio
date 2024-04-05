@@ -17,7 +17,7 @@ function MyProject() {
                         <div className="col-span-7 xl:col-span-2 w-full h-full">
                             <a href={project_item.website?.href}>
                                 <ImageTag
-                                    src={project_item.image}
+                                    src={project_item.img}
                                     alt="logo"
                                     className="w-full h-full md:rounded-md overflow-hidden"
                                     classImage="!relative xl:position xl:object-cover xl:object-top"
