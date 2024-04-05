@@ -27,16 +27,20 @@ interface IDataHeader {
 }
 
 interface IIntroduce {
-    image: string;
     name: string;
     field_work: string;
     intro: string;
     socials: IRedirect[];
 }
 
-interface IPersonalItem {
+interface IPersonalInfo {
     field_text: string;
     icon: React.ReactNode;
+}
+
+interface IPersonalList {
+    img: string;
+    info: IPersonalInfo[];
 }
 
 interface IProject {
@@ -62,7 +66,6 @@ export const DataHeader: IDataHeader = {
 };
 
 export const DataIntroduce: IIntroduce = {
-    image: '/image/about_me.jpg',
     name: 'Dang Quoc Huy',
     field_work: 'Fullstack Web Developer',
     intro: `Welcome to my portfolio! I'm a fullstack web developer, proficient in both front-end and back-end programming. 
@@ -90,31 +93,41 @@ export const DataIntroduce: IIntroduce = {
         },
     ],
 };
-export const Data_Personal_Info: IPersonalItem[] = [
-    { field_text: 'Dang Quoc Huy', icon: <Icon_User /> },
-    { field_text: '22/12/2002', icon: <Icon_Date /> },
-    { field_text: '(+84) 854395048', icon: <Icon_Phone /> },
-    { field_text: 'quochuy22122002@gmail.com', icon: <Icon_Mail /> },
-    { field_text: 'Go Vap District, Ho Chi Minh City', icon: <Icon_Location /> },
-];
 
-export const Data_Education: IPersonalItem[] = [
-    { field_text: 'University of Transport Ho Chi Minh City (10/2020 - now)', icon: <Icon_School /> },
-    { field_text: ' Information Technology', icon: <Icon_Major /> },
-    { field_text: 'HTML, CSS, JavaScript (F8) ', icon: <Icon_Cerifications /> },
-    { field_text: 'React JS (F8)', icon: <Icon_Cerifications /> },
-    { field_text: 'English certificate B1 (UTH) ', icon: <Icon_Cerifications /> },
-];
+export const Data_Personal_Info: IPersonalList = {
+    img: '/image/about_me.jpg',
+    info: [
+        { field_text: 'Dang Quoc Huy', icon: <Icon_User /> },
+        { field_text: '22/12/2002', icon: <Icon_Date /> },
+        { field_text: '(+84) 854395048', icon: <Icon_Phone /> },
+        { field_text: 'quochuy22122002@gmail.com', icon: <Icon_Mail /> },
+        { field_text: 'Go Vap District, Ho Chi Minh City', icon: <Icon_Location /> },
+    ],
+};
 
-export const Data_Skills: IPersonalItem[] = [
-    { field_text: 'Javascript, Typescript', icon: <Icon_Skills /> },
-    { field_text: 'HTML,CSS, SCSS', icon: <Icon_Skills /> },
-    { field_text: 'TailwindCSS, Bootstrap', icon: <Icon_Skills /> },
-    { field_text: 'ReactJS, NextJS', icon: <Icon_Skills /> },
-    { field_text: 'NodeJS, ExpressJS, Socket.io, RESTful API', icon: <Icon_Skills /> },
-    { field_text: 'MongoDB, MySQL', icon: <Icon_Skills /> },
-    { field_text: 'Git, Github, Gitlab', icon: <Icon_Skills /> },
-];
+export const Data_Education: IPersonalList = {
+    img: '/image/education.png',
+    info: [
+        { field_text: 'University of Transport Ho Chi Minh City (10/2020 - Now)', icon: <Icon_School /> },
+        { field_text: ' Information Technology', icon: <Icon_Major /> },
+        { field_text: 'HTML, CSS, JavaScript (F8) ', icon: <Icon_Cerifications /> },
+        { field_text: 'React JS (F8)', icon: <Icon_Cerifications /> },
+        { field_text: 'English certificate B1 (UTH) ', icon: <Icon_Cerifications /> },
+    ],
+};
+
+export const Data_Skills: IPersonalList = {
+    img: '/image/skills_programming.png',
+    info: [
+        { field_text: 'Javascript, Typescript', icon: <Icon_Skills /> },
+        { field_text: 'HTML,CSS, SCSS', icon: <Icon_Skills /> },
+        { field_text: 'TailwindCSS, Bootstrap', icon: <Icon_Skills /> },
+        { field_text: 'ReactJS, NextJS', icon: <Icon_Skills /> },
+        { field_text: 'NodeJS, ExpressJS, Socket.io, RESTful API', icon: <Icon_Skills /> },
+        { field_text: 'MongoDB, MySQL', icon: <Icon_Skills /> },
+        { field_text: 'Git, Github, Gitlab', icon: <Icon_Skills /> },
+    ],
+};
 
 export const DataProject: IProject[] = [
     {
