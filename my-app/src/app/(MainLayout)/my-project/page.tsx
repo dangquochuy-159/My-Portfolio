@@ -3,7 +3,7 @@ import ImageTag from '@/components/ImageTag/ImageTag';
 import TitlePage from '@/components/TitlePage/TitlePage';
 import { DataProject } from '@/data/data_portfolio';
 
-function Project() {
+function MyProject() {
     const data_project = DataProject;
     return (
         <section className="h-auto text-[var(--color-text)] relative flex flex-col gap-y-8 py-[var(--height-header)] md:pt-0 md:pb-10">
@@ -87,4 +87,4 @@ function Project() {
     );
 }
 
-export default Project;
+export default MyProject;
