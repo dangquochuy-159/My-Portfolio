@@ -13,47 +13,7 @@ import {
     Icon_Skills,
     Icon_User,
 } from '@/components/Icon/Icon';
-
-interface IRedirect {
-    name?: string;
-    href: string;
-    icon?: React.ReactNode;
-    icon_name?: string;
-}
-
-interface IDataHeader {
-    logo: string;
-    nav: IRedirect[];
-}
-
-interface IIntroduce {
-    name: string;
-    field_work: string;
-    intro: string;
-    socials: IRedirect[];
-}
-
-interface IPersonalInfo {
-    field_text: string;
-    icon: React.ReactNode;
-}
-
-interface IPersonalList {
-    img: string;
-    info: IPersonalInfo[];
-}
-
-interface IProject {
-    img: string;
-    time: string;
-    name: string;
-    size: string;
-    position: string;
-    des: string[];
-    techs: IRedirect[];
-    github?: IRedirect[];
-    website?: IRedirect;
-}
+import { IDataHeader, IIntroduce, IPersonalList, IProject } from '@/models/CommonInterfaces';
 
 export const DataHeader: IDataHeader = {
     logo: '/image/logo_header.png',
