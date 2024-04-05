@@ -1,4 +1,5 @@
 import { IconGitLink, IconWebsite } from '@/components/Icon/Icon';
+import ImageTag from '@/components/ImageTag/ImageTag';
 import TitlePage from '@/components/TitlePage/TitlePage';
 import { DataProject } from '@/data/data_portfolio';
 
@@ -8,97 +9,82 @@ function Project() {
         <section className="h-auto text-[var(--color-text)] relative flex flex-col gap-y-8 py-[var(--height-header)] md:pt-0 md:pb-10">
             <TitlePage
                 title="Welcome to my project"
-                des="Thank you for your interest in my projects. Please join me to explore them."
+                des="Thank you for your interest in my projects. This is the result of my studying, accumulating experience and participating in real projects. Come explore them with me."
             />
-            {data_project?.map((project_item) => (
-                <div
-                    key={project_item.time}
-                    className=" grid grid-cols-4 gap-y-4 bg-[var(--color-box)] p-5 md:p-10 md:rounded-xl"
-                >
-                    <div className="col-span-4 xl:col-span-3 flex flex-col gap-2">
-                        <p className="text-[var(--color-text)]"> {project_item.time}</p>
-
-                        <p className="text-[var(--color-primary)] text-2xl font-extrabold ">{project_item.name}</p>
-
-                        <div className="flex gap-2">
-                            <h3 className="text-white  font-bold">Team size:</h3>
-                            <p className="italic">{project_item.size}</p>
+            <div className="space-y-14">
+                {data_project?.map((project_item) => (
+                    <div key={project_item.time} className="grid grid-cols-7 gap-x-4">
+                        {/* Image */}
+                        <div className="col-span-2 w-full h-full">
+                            <a href={project_item.website?.href}>
+                                <ImageTag
+                                    src={project_item.image}
+                                    alt="logo"
+                                    className="hidden xl:block w-full h-full rounded-md overflow-hidden"
+                                    classImage="object-cover object-top"
+                                />
+                            </a>
                         </div>
-                        <div className="flex flex-col md:flex-row gap-2">
-                            <h3 className="text-white  font-bold">My position:</h3>
-                            <p className="italic">{project_item.position}</p>
-                        </div>
-                        <div>
-                            <h3 className="text-white  font-bold">My responsibility: </h3>
-                            <ul className="flex flex-col mt-2 gap-2 md:px-12 italic">
-                                {project_item.roles.map((role) => (
-                                    <li key={role} className="md:list-disc">
-                                        {role}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 className="text-white  font-bold">Description:</h3>
-                            <ul className="flex flex-col mt-2 gap-2 md:px-12 italic">
-                                {project_item.des?.map((desItem) => (
-                                    <li key={desItem} className="md:list-disc">
-                                        {desItem}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="col-span-4 xl:col-span-1">
-                        <h3 className="text-white mb-2 font-bold">Technology description:</h3>
-
-                        <div className="flex flex-wrap gap-x-2 gap-y-4">
-                            {project_item.techs?.map((tech) => (
-                                <a
-                                    key={tech.href}
-                                    href={tech.href}
-                                    target="_blank"
-                                    className="text-white border-2 border-[var(--color-primary)] 
-                                    rounded-md py-1 px-2 hover:text-[var(--color-primary)]"
-                                >
-                                    {tech.name}
-                                </a>
-                            ))}
-                        </div>
-
-                        <h3 className="text-white my-2  font-bold">Github:</h3>
-
-                        <div className="flex flex-col">
-                            {project_item.github?.map((itemGit) => (
-                                <a
-                                    key={itemGit.href}
-                                    href={itemGit.href}
-                                    target="_blank"
-                                    className="text-[var(--color-primary)] flex gap-2 items-center hover:underline"
-                                >
-                                    <IconGitLink />
-                                    <span>{itemGit.name}</span>
-                                </a>
-                            ))}
-                        </div>
-
-                        {project_item.website && (
-                            <>
-                                <h3 className="text-white my-2  font-bold">Website:</h3>
+                        {/* Content */}
+                        <div className="col-span-5 w-full h-auto space-y-3">
+                            {/* Name */}
+                            <div className="inline-block">
                                 <a
                                     href={project_item.website?.href}
-                                    target="_blank"
-                                    className="text-[var(--color-primary)] flex gap-2 items-center hover:underline"
+                                    className={`flex items-center gap-2 text-[var(--color-primary)] text-2xl font-extrabold ${
+                                        project_item.website?.href ? 'hover:underline' : ''
+                                    }`}
                                 >
-                                    <IconWebsite />
-                                    <span>{project_item.website?.name}</span>
+                                    <span> {project_item.name}</span>
+                                    {project_item.website?.href ? <IconWebsite /> : ''}
                                 </a>
-                            </>
-                        )}
+                            </div>
+                            {/* Description */}
+                            <div className="space-y-3">
+                                <p className="italic">{project_item.time}</p>
+                                <p className="italic">Team size: {project_item.size}</p>
+                                <p className="italic text-white font-bold">{project_item.position}</p>
+                                <ul className="flex flex-col gap-2 italic">
+                                    {project_item.des?.map((desItem) => (
+                                        <li key={desItem} className="">
+                                            {desItem}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                            {/* Tech */}
+                            <div className="flex flex-wrap gap-x-6 gap-y-4">
+                                {project_item.techs?.map((tech) => (
+                                    <a
+                                        key={tech.href}
+                                        href={tech.href}
+                                        target="_blank"
+                                        className="text-[var(--color-primary)] font-bold hover:underline"
+                                    >
+                                        {tech.name}
+                                    </a>
+                                ))}
+                            </div>
+                            {/* Github */}
+                            <div className="inline-block">
+                                {project_item.github?.map((itemGit) => (
+                                    <a
+                                        key={itemGit.href}
+                                        href={itemGit.href}
+                                        target="_blank"
+                                        className=" text-white flex gap-2 items-center "
+                                    >
+                                        <IconGitLink />
+                                        <span className="hover:text-[var(--color-primary)] hover:underline">
+                                            {itemGit.name}
+                                        </span>
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </section>
     );
 }
