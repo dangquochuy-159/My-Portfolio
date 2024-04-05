@@ -385,10 +385,6 @@ export const DataProject: IProject[] = [
                 href: 'https://www.microsoft.com/en-us/sql-server/',
             },
         ],
-        website: {
-            name: '',
-            href: 'https://alogiadung.vn/',
-        },
         github: [
             {
                 name: 'Gihub_Management_Coffe',
