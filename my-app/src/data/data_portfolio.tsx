@@ -27,6 +27,7 @@ interface IDataHeader {
 }
 
 interface IIntroduce {
+    image: string;
     name: string;
     field_work: string;
     intro: string;
@@ -39,14 +40,14 @@ interface IPersonalItem {
 }
 
 interface IProject {
+    image: string;
     time: string;
     name: string;
     size: string;
     position: string;
-    roles: string[];
     des: string[];
     techs: IRedirect[];
-    github: IRedirect[];
+    github?: IRedirect[];
     website?: IRedirect;
 }
 
@@ -61,6 +62,7 @@ export const DataHeader: IDataHeader = {
 };
 
 export const DataIntroduce: IIntroduce = {
+    image: '/image/about_me.jpg',
     name: 'Dang Quoc Huy',
     field_work: 'Fullstack Web Developer',
     intro: `Welcome to my portfolio! I'm a fullstack web developer, proficient in both front-end and back-end programming. 
@@ -116,15 +118,14 @@ export const Data_Skills: IPersonalItem[] = [
 
 export const DataProject: IProject[] = [
     {
+        image: '/image/project_familypet.png',
         time: '10/2023 - 12/2023',
         name: 'E-commerce website (FamilyPet)',
         size: '2',
         position: 'FULLSTACK DEVELOPER',
-        roles: ['Design and Programming.', 'Responsive, Optimize website.', 'Database Design.'],
+
         des: [
-            'Website Client-Server',
-            'This is an e-commerce website. Helps users more easily reach sellers on the online platform.',
-            'Regarding the functionality of the website: there are full functions for buying and selling activities',
+            'Website Client-Server. This is an e-commerce website. Helps users more easily reach sellers on the online platform. Regarding the functionality of the website there are full functions for buying and selling activities',
             'Users: can log in, register an account, view product information, buy and pay for products, comment and rate products.',
             'Administrator: can manage products, orders, customers, sales statistics, products, orders.',
         ],
@@ -182,15 +183,14 @@ export const DataProject: IProject[] = [
         },
     },
     {
+        image: '/image/project_shoppet.png',
         time: '04/2023 - 05/2023',
         name: 'E-commerce website (Shoppet)',
         size: '2',
         position: 'FULLSTACK DEVELOPER',
-        roles: ['Design and Programming.', 'Responsive, Optimize website.', 'Database Design.'],
+
         des: [
-            'WebSerVer MVC',
-            'This is an e-commerce website. Helps users more easily reach sellers on the online platform.',
-            'Regarding the functionality of the website: there are full functions for buying and selling activities',
+            'WebSerVer MVC. This is an e-commerce website. Helps users more easily reach sellers on the online platform. Regarding the functionality of the website there are full functions for buying and selling activities',
             'Users: can log in, register an account, view product information, buy and pay for products, comment and rate products.',
             'Administrator: can manage products, orders, customers, sales statistics, products, orders.',
         ],
@@ -232,6 +232,154 @@ export const DataProject: IProject[] = [
             {
                 name: 'Gihub_Shoppet',
                 href: 'https://github.com/dangquochuy-159/e-commerce_website_shoppet',
+            },
+        ],
+    },
+    {
+        image: '/image/minas_dental.png',
+        time: '2023',
+        name: 'MINAS DENTAL',
+        size: '2',
+        position: 'FRONT-END DEVELOPER',
+
+        des: [
+            'Website specializing in porcelain dental services in Vietnam',
+            'Users can access to view available services at the dental clinic, contact the dental clinic online to inquire about services.',
+            'Administrators can post available services at the department, as well as upload the latest news articles to the website.',
+        ],
+        techs: [
+            {
+                name: 'HTML',
+                href: 'https://vi.wikipedia.org/wiki/HTML',
+            },
+            {
+                name: 'CSS',
+                href: 'https://vi.wikipedia.org/wiki/CSS',
+            },
+            {
+                name: 'WordPress',
+                href: 'https://wordpress.com/',
+            },
+            {
+                name: 'Flatsome',
+                href: 'https://flatsome3.uxthemes.com/',
+            },
+        ],
+        website: {
+            name: '',
+            href: 'https://minasdental.com/',
+        },
+    },
+    {
+        image: '/image/matgia.png',
+        time: '2023',
+        name: 'Trung tâm Mắt Giả',
+        size: '2',
+        position: 'FRONT-END DEVELOPER',
+
+        des: [
+            'Prosthetic Eye Center is a place that provides eye restorations using high quality acrylic materials. Established since 2018, the Prosthetic Eye Center has successfully restored prosthetic eyes for more than 1,000 cases.',
+        ],
+        techs: [
+            {
+                name: 'HTML',
+                href: 'https://vi.wikipedia.org/wiki/HTML',
+            },
+            {
+                name: 'CSS',
+                href: 'https://vi.wikipedia.org/wiki/CSS',
+            },
+            {
+                name: 'WordPress',
+                href: 'https://wordpress.com/',
+            },
+            {
+                name: 'Flatsome',
+                href: 'https://flatsome3.uxthemes.com/',
+            },
+        ],
+        website: {
+            name: '',
+            href: 'https://matgia.com/',
+        },
+    },
+    {
+        image: '/image/eshop.png',
+        time: '2023',
+        name: 'Eshop - Alo Gia Dụng',
+        size: '2',
+        position: 'FRONT-END DEVELOPER',
+
+        des: [
+            'Specializing in manufacturing, supplying and trading all kinds of electrical appliances, kitchen appliances, household appliances,...',
+        ],
+        techs: [
+            {
+                name: 'HTML',
+                href: 'https://vi.wikipedia.org/wiki/HTML',
+            },
+            {
+                name: 'CSS',
+                href: 'https://vi.wikipedia.org/wiki/CSS',
+            },
+            {
+                name: 'WordPress',
+                href: 'https://wordpress.com/',
+            },
+            {
+                name: 'Flatsome',
+                href: 'https://flatsome3.uxthemes.com/',
+            },
+        ],
+        website: {
+            name: '',
+            href: 'https://alogiadung.vn/',
+        },
+    },
+    {
+        image: '/image/tinhban_coffe.png',
+        time: '11/2023 - 12/2023',
+        name: 'Tình Bạn Coffe',
+        size: '2',
+        position: 'BACK-END DEVELOPER',
+
+        des: [
+            'The Coffee Shop Management project is a comprehensive software solution designed to streamline and enhance the management of a coffee shop. Built using .NET WinForms, C#, Guna Framework, and integrated with SQL Server',
+        ],
+        techs: [
+            {
+                name: 'C#',
+                href: 'https://www.w3schools.com/cs/index.php',
+            },
+            {
+                name: '.NET WinForms',
+                href: 'https://learn.microsoft.com/vi-vn/dotnet/desktop/winforms/?view=netframeworkdesktop-4.8',
+            },
+            {
+                name: 'Guna Framework',
+                href: 'https://gunaui.com/',
+            },
+            {
+                name: 'LiveCharts',
+                href: 'https://v0.lvcharts.com/',
+            },
+            {
+                name: 'ADO .NET',
+                href: 'https://learn.microsoft.com/vi-vn/dotnet/framework/data/adonet/',
+            },
+            {
+                name: 'Mircosoft SQL Server',
+                href: 'https://www.microsoft.com/en-us/sql-server/',
+            },
+        ],
+        website: {
+            name: '',
+            href: 'https://alogiadung.vn/',
+        },
+        github: [
+            {
+                name: 'Gihub_Management_Coffe',
+                href: 'https://github.com/hoigreen/project-coffee-shop-management-ado-dotnet',
             },
         ],
     },
