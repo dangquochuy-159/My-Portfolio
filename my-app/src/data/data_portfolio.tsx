@@ -352,7 +352,7 @@ export const DataProject: IProject[] = [
     {
         img: '/image/tinhban_coffe.png',
         time: '11/2023 - 12/2023',
-        name: 'Tình Bạn Coffe',
+        name: 'Tinh Ban Coffe',
         size: '2',
         position: 'BACK-END DEVELOPER',
 
