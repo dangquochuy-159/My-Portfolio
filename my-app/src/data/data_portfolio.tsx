@@ -387,7 +387,7 @@ export const DataProject: IProject[] = [
         ],
         github: [
             {
-                name: 'Gihub_Management_Coffe',
+                name: 'Gihub_Management_Coffee',
                 href: 'https://github.com/hoigreen/project-coffee-shop-management-ado-dotnet',
             },
         ],
