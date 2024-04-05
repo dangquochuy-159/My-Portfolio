@@ -13,25 +13,25 @@ function Project() {
             />
             <div className="space-y-14">
                 {data_project?.map((project_item) => (
-                    <div key={project_item.time} className="grid grid-cols-7 gap-x-4">
+                    <div key={project_item.time} className="w-full h-full grid grid-cols-7 gap-4 ">
                         {/* Image */}
-                        <div className="col-span-2 w-full h-full">
+                        <div className="col-span-7 xl:col-span-2 w-full h-full">
                             <a href={project_item.website?.href}>
                                 <ImageTag
                                     src={project_item.image}
                                     alt="logo"
-                                    className="hidden xl:block w-full h-full rounded-md overflow-hidden"
-                                    classImage="object-cover object-top"
+                                    className="w-full h-full md:rounded-md overflow-hidden"
+                                    classImage="!relative xl:position xl:object-cover xl:object-top"
                                 />
                             </a>
                         </div>
                         {/* Content */}
-                        <div className="col-span-5 w-full h-auto space-y-3">
+                        <div className="col-span-7 xl:col-span-5 w-full h-auto space-y-3 px-2">
                             {/* Name */}
                             <div className="inline-block">
                                 <a
                                     href={project_item.website?.href}
-                                    className={`flex items-center gap-2 text-[var(--color-primary)] text-2xl font-extrabold ${
+                                    className={`flex items-center gap-2 text-[var(--color-primary)] text-lg md:text-2xl font-extrabold ${
                                         project_item.website?.href ? 'hover:underline' : ''
                                     }`}
                                 >
