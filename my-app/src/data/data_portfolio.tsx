@@ -108,7 +108,7 @@ export const Data_Personal_Info: IPersonalList = {
 export const Data_Education: IPersonalList = {
     img: '/image/education.png',
     info: [
-        { field_text: 'University of Transport Ho Chi Minh City (10/2020 - Now)', icon: <Icon_School /> },
+        { field_text: 'University of Transport Ho Chi Minh City', icon: <Icon_School /> },
         { field_text: ' Information Technology', icon: <Icon_Major /> },
         { field_text: 'HTML, CSS, JavaScript (F8) ', icon: <Icon_Cerifications /> },
         { field_text: 'React JS (F8)', icon: <Icon_Cerifications /> },
