@@ -1,4 +1,5 @@
 import { Icon_Facebook, Icon_Location, Icon_Mail, Icon_Phone } from '@/components/Icon/Icon';
+import ImageTag from '@/components/ImageTag/ImageTag';
 import TitlePage from '@/components/TitlePage/TitlePage';
 
 function Contact() {
@@ -8,7 +9,15 @@ function Contact() {
                 title="Contact me to work together"
                 des="Thank you for visiting my portfolio page. If you are impressed, you can contact me via the methods below."
             />
-            <div className="grid grid-cols-1 xl:grid-cols-2 justify-center gap-8 text-[var(--color-primary)] font-extrabold mt-10">
+            <div className="w-full h-full">
+                <ImageTag
+                    src="/image/contact.png"
+                    alt="logo"
+                    className="w-2/3 xl:w-1/3 h-full m-auto md:rounded-md overflow-hidden"
+                    classImage=" !relative object-contain"
+                />
+            </div>
+            <div className="grid grid-cols-1 xl:grid-cols-2 justify-center gap-8 text-[var(--color-primary)] font-extrabold mt-10 pb-24">
                 <div className="col-span-1 flex flex-col gap-4 md:rounded-lg justify-center items-center w-full h-48 bg-[var(--color-box)]">
                     <Icon_Phone className="h-8 w-8" />
                     <a href="tel:0854395048" className="hover:underline">
