@@ -1,7 +1,12 @@
+import type { Metadata } from 'next';
 import Header from '@/components/Header/Header';
 import MouseTracker from '@/components/MouseTracker/MouseTracker';
-import Footer from '@/components/Footer/Footer';
 import HeaderMobile from '@/components/HeaderMobile/HeaderMobile';
+
+export const metadata: Metadata = {
+    title: 'HuyDev Portfolio',
+    description: 'HuyDev - Fullstack Web Developer',
+};
 
 function MainLayout({ children }: { children: React.ReactNode }) {
     return (
