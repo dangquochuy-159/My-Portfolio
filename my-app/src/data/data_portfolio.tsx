@@ -251,7 +251,7 @@ export const DataProject: IProject[] = [
     {
         img: '/image/minas_dental.png',
         time: '2023',
-        name: 'MINAS DENTAL',
+        name: 'Minas Dental',
         size: '2',
         position: 'FRONT-END DEVELOPER',
 
@@ -286,7 +286,7 @@ export const DataProject: IProject[] = [
     {
         img: '/image/matgia.png',
         time: '2023',
-        name: 'Trung tâm Mắt Giả',
+        name: 'Trung Tam Mat Gia',
         size: '2',
         position: 'FRONT-END DEVELOPER',
 
@@ -319,7 +319,7 @@ export const DataProject: IProject[] = [
     {
         img: '/image/eshop.png',
         time: '2023',
-        name: 'Eshop - Alo Gia Dụng',
+        name: 'Eshop - Alo Gia Dung',
         size: '2',
         position: 'FRONT-END DEVELOPER',
 
