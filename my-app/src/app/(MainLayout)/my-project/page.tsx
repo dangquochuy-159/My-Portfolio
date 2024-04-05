@@ -14,7 +14,6 @@ function Project() {
             <div className="space-y-14">
                 {data_project?.map((project_item) => (
                     <div key={project_item.time} className="w-full h-full grid grid-cols-7 gap-4 ">
-                        {/* Image */}
                         <div className="col-span-7 xl:col-span-2 w-full h-full">
                             <a href={project_item.website?.href}>
                                 <ImageTag
@@ -25,9 +24,8 @@ function Project() {
                                 />
                             </a>
                         </div>
-                        {/* Content */}
+
                         <div className="col-span-7 xl:col-span-5 w-full h-auto space-y-3 px-2">
-                            {/* Name */}
                             <div className="inline-block">
                                 <a
                                     href={project_item.website?.href}
@@ -39,7 +37,7 @@ function Project() {
                                     {project_item.website?.href ? <IconWebsite /> : ''}
                                 </a>
                             </div>
-                            {/* Description */}
+
                             <div className="space-y-3">
                                 <p className="italic">{project_item.time}</p>
                                 <p className="italic">Team size: {project_item.size}</p>
@@ -52,7 +50,7 @@ function Project() {
                                     ))}
                                 </ul>
                             </div>
-                            {/* Tech */}
+
                             <div className="flex flex-wrap gap-x-6 gap-y-4">
                                 {project_item.techs?.map((tech) => (
                                     <a
@@ -65,7 +63,7 @@ function Project() {
                                     </a>
                                 ))}
                             </div>
-                            {/* Github */}
+
                             <div className="inline-block">
                                 {project_item.github?.map((itemGit) => (
                                     <a
