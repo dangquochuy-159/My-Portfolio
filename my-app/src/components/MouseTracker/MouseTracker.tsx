@@ -14,16 +14,16 @@ const MouseTracker = ({ children }: { children: React.ReactNode }) => {
     };
 
     return (
-        <div style={{ height: '100vh', position: 'relative' }} onMouseMove={handleMouseMove}>
+        <div style={{ height: '100%' }} onMouseMove={handleMouseMove}>
             {mousePosition.x !== null && mousePosition.y !== null && (
                 <div
                     style={{
-                        position: 'absolute',
+                        position: 'fixed',
                         left: mousePosition.x - 10,
                         top: mousePosition.y - 10,
                         width: '1px',
                         height: '1px',
-                        boxShadow: '0 0 2000px 40px rgba(255, 255, 255,1)',
+                        boxShadow: '0 0 500px 40px rgba(255, 255, 255,1)',
                     }}
                 />
             )}
