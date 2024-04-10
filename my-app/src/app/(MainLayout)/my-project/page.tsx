@@ -15,7 +15,7 @@ function MyProject() {
                 {data_project?.map((project_item) => (
                     <div key={project_item.time} className="w-full h-full grid grid-cols-7 gap-4 ">
                         <div className="col-span-7 xl:col-span-2 w-full h-full">
-                            <a href={project_item.website?.href}>
+                            <a href={project_item.website?.href} target="_blank">
                                 <ImageTag
                                     src={project_item.img}
                                     alt="logo"
@@ -29,6 +29,7 @@ function MyProject() {
                             <div className="inline-block">
                                 <a
                                     href={project_item.website?.href}
+                                    target="_blank"
                                     className={`flex items-center gap-2 text-[var(--color-primary)] text-lg md:text-2xl font-extrabold ${
                                         project_item.website?.href ? 'hover:underline' : ''
                                     }`}
