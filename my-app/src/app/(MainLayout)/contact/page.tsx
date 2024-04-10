@@ -70,48 +70,44 @@ function Contact() {
                     classImage=" !relative object-contain"
                 />
             </div>
-            <div className="grid grid-cols-2 gap-x-10">
-                <div className="col-span-1 space-y-5 text-[var(--color-primary)] pb-24">
-                    <h2 className="text-white text-4xl font-extrabold">Contact Info</h2>
+            <div className="grid grid-cols-2 gap-x-10 px-4">
+                <div className="col-span-2 xl:col-span-1 space-y-5 text-[var(--color-primary)] pb-24">
+                    <h2 className="text-white text-4xl font-extrabold text-center xl:text-left">Contact Info</h2>
                     <div className="flex gap-x-4 md:rounded-lg items-center w-full h-16">
-                        <span className="w-1/12">
+                        <span className="w-1/12 text-left">
                             <Icon_Phone className="h-8 w-8" />
                         </span>
-                        <span>Phone:</span>
                         <a href="tel:0854395048" className="hover:underline">
                             (+84) 854395048
                         </a>
                     </div>
                     <div className="flex gap-x-4 md:rounded-lg items-center w-full h-16">
-                        <span className="w-1/12">
+                        <span className="w-1/12 text-left">
                             <Icon_Mail className="h-8 w-8" />
                         </span>
-                        <span>Email:</span>
                         <a href="mailto: quochuy22122002@gmail.com" className="hover:underline">
                             quochuy22122002@gmail.com
                         </a>
                     </div>
                     <div className="flex gap-x-4 md:rounded-lg items-center w-full h-16">
-                        <span className="w-1/12">
+                        <span className="w-1/12 text-left">
                             <Icon_Facebook color="#5febd5" className="h-10 w-10" />
                         </span>
-                        <span>Facebook:</span>
                         <a href="https://www.facebook.com/quochuy2212" target="_blank" className="hover:underline">
                             Đặng Quốc Huy
                         </a>
                     </div>
                     <div className="flex gap-x-4 md:rounded-lg items-center w-full h-16">
-                        <span className="w-1/12">
+                        <span className="w-1/12 text-left">
                             <Icon_Location className="h-10 w-10" />
                         </span>
-                        <span>Address:</span>
                         <a href="https://maps.app.goo.gl/n2C8es2rxUv9qkmk8" target="_blank" className="hover:underline">
                             Go Vap District, Ho Chi Minh City
                         </a>
                     </div>
                 </div>
-                <form onSubmit={(e) => e.preventDefault()} className="col-span-1 flex flex-col gap-y-5">
-                    <h2 className="text-white text-4xl font-extrabold">Contact Form</h2>
+                <form onSubmit={(e) => e.preventDefault()} className="col-span-2 xl:col-span-1 flex flex-col gap-y-5">
+                    <h2 className="text-white text-4xl font-extrabold text-center xl:text-left">Contact Form</h2>
                     <div className="flex flex-col gap-y-2 ">
                         <label className="text-white font-semibold">Name</label>
                         <input
