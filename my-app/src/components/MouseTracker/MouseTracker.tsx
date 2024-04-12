@@ -14,7 +14,7 @@ const MouseTracker = ({ children }: { children: React.ReactNode }) => {
     };
 
     return (
-        <div style={{ height: '100%' }} onMouseMove={handleMouseMove}>
+        <div style={{ height: '100vh' }} onMouseMove={handleMouseMove}>
             {mousePosition.x !== null && mousePosition.y !== null && (
                 <div
                     className="hidden xl:block"
